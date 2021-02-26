@@ -8,6 +8,7 @@
 <p align="center">
   <a href="#-sobre"> Sobre </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-material-de-apoio">Material de apoio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-material-de-apoio">Diagrama</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-como-baixar">Como baixar</a>
 
 # 🔖 Sobre
@@ -25,6 +26,12 @@ Aprendemos conceitos sobre o que é um API, como iniciar um projeto utilizando T
 - [Express](https://expressjs.com/pt-br/)
 - [Jest](https://jestjs.io/)
 - [SQL Editor Beekeeper Studio](https://www.beekeeperstudio.io/)
+
+---
+
+## 🔶 Diagrama
+
+<img src="public/diagrama.png"></img>
 
 ---
 
