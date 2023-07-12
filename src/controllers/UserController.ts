@@ -39,6 +39,30 @@ class UserController {
 
     return response.status(201).json(user);
   }
+
+  async delete(request: Request, response: Response) {
+    const { id } = request.params;
+
+    const usersRepository = getCustomRepository(UsersRepository);
+
+    const user = await usersRepository.findOne({
+      id,
+    });
+
+    if (!user) {
+      throw new AppError("User not found!");
+    }
+
+    const deletedUser = await usersRepository.remove(user);
+
+    if (!deletedUser) {
+      throw new AppError("User not deleted!");
+    }
+
+    await usersRepository.delete(user);
+
+    return response.status(204).json(user);
+  }
 }
 
 export { UserController };
